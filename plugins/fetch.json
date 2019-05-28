@@ -6,13 +6,5 @@
     },
     "is_top_level": true,
     "variables": {}
-  },
-  "cordova-plugin-admob-facebook": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-admob-facebook"
-    },
-    "is_top_level": true,
-    "variables": {}
   }
 }

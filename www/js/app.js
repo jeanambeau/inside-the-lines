@@ -79,26 +79,19 @@ angular.module("inside_the_lines", ["ngCordova","ionic","ionMdInput","ionic-mate
 						//alert(err.message);
 					}
 				});
-			
-				// INTERSTITIAL
-				try{
-					AdMob.prepareInterstitial({
-						adId: admobid.interstitial,
-						autoShow: false,
-					});
-				}catch(err){ 
-					//alert(err.message);
-				}
 				
-				$interval(function(){
-					if($rootScope.liveStatus == "run"){
-						try{
-							AdMob.showInterstitial();
-						}catch(err){ 
-							//alert(err.message);
-						}
+				// interstitial
+				$timeout(function(){
+					try{
+						AdMob.prepareInterstitial({
+							adId: admobid.interstitial,
+							autoShow: false,
+						});
+					}catch(err){ 
+						//alert(err.message);
 					}
-				},10000); 
+					
+				}, 500);
 				
 				// rewardvideo
 				$timeout(function(){
