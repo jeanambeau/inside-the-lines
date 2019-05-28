@@ -403,6 +403,14 @@ angular.module("inside_the_lines.controllers", [])
 
 // TODO: insidethelinesCtrl --|-- 
 .controller("insidethelinesCtrl", function($ionicConfig,$scope,$rootScope,$state,$location,$ionicScrollDelegate,$ionicListDelegate,$http,$httpParamSerializer,$stateParams,$timeout,$interval,$ionicLoading,$ionicPopup,$ionicPopover,$ionicActionSheet,$ionicSlideBoxDelegate,$ionicHistory,ionicMaterialInk,ionicMaterialMotion,$window,$ionicModal,base64,md5,$document,$sce,$ionicGesture,$translate,tmhDynamicLocale){
+	// TODO: insidethelinesCtrl --|-- showInterstitial
+	if (typeof AdMob !== "undefined"){
+		try{
+			AdMob.showInterstitial();
+		}catch(err){ 
+			//alert(err.message);
+		}
+	}
 	
 	$rootScope.headerExists = true;
 	$rootScope.ionWidth = $document[0].body.querySelector(".view-container").offsetWidth || 412;

@@ -46,6 +46,72 @@ angular.module("inside_the_lines", ["ngCordova","ionic","ionMdInput","ionic-mate
 			if(window.StatusBar) {
 				StatusBar.styleDefault();
 			}
+			// this will create a banner on startup
+			//required: cordova plugin add cordova-plugin-admobpro --save
+			if (typeof AdMob !== "undefined"){
+				var admobid = {};
+				admobid = {
+					banner: "",
+					interstitial: "ca-app-pub-2041208520808887/4860902372",
+					rewardvideo: ""
+				};
+				
+				// BANNER
+				$timeout(function(){
+					try{
+						AdMob.createBanner({
+							adId: admobid.banner,
+							overlap: false,
+							autoShow: false,
+							offsetTopBar: false,
+							position: AdMob.AD_POSITION.TOP_CENTER,
+							bgColor: "black"
+						});
+					}catch(err){ 
+						//alert(err.message);
+					}
+				}, 500);
+				
+				$ionicPlatform.on("pause",function(){
+					try{
+						AdMob.hideBanner();
+					}catch(err){ 
+						//alert(err.message);
+					}
+				});
+			
+				// INTERSTITIAL
+				try{
+					AdMob.prepareInterstitial({
+						adId: admobid.interstitial,
+						autoShow: false,
+					});
+				}catch(err){ 
+					//alert(err.message);
+				}
+				
+				$interval(function(){
+					if($rootScope.liveStatus == "run"){
+						try{
+							AdMob.showInterstitial();
+						}catch(err){ 
+							//alert(err.message);
+						}
+					}
+				},10000); 
+				
+				// rewardvideo
+				$timeout(function(){
+					try{
+						AdMob.prepareRewardVideoAd({
+							adId: admobid.rewardvideo,
+							autoShow: false,
+						});
+					}catch(err){ 
+						//alert(err.message);
+					}
+				}, 500);
+			}
 
 
 		});
@@ -211,6 +277,7 @@ angular.module("inside_the_lines", ["ngCordova","ionic","ionMdInput","ionic-mate
 
 	.state("inside_the_lines.insidethelines", {
 		url: "/insidethelines",
+		cache:false,
 		views: {
 			"inside_the_lines-side_menus" : {
 						templateUrl:"templates/inside_the_lines-insidethelines.html",
