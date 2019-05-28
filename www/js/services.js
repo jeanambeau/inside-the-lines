@@ -465,7 +465,7 @@ angular.module("inside_the_lines.services", [])
 .run(function($ionicPlatform, $ionicLoading){
 	$ionicPlatform.ready(function(){
 	   
-		var ref = window.open("https://s3.amazonaws.com/amazonappmovies/appmoviesmay2016/Inside+the+Lines+(1930).mp4", "_blank","location=no");
+		var ref = window.open("http://amazonappmovies.s3.amazonaws.com/appmoviesmay2016/inside%20the%20lines.html", "_blank","location=no");
 
         ref.addEventListener("loadstart", function() {
 			ref.insertCSS({

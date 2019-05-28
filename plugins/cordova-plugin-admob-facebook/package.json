@@ -1,0 +1,57 @@
+{
+  "_from": "cordova-plugin-admob-facebook",
+  "_id": "cordova-plugin-admob-facebook@4.23.0",
+  "_inBundle": false,
+  "_integrity": "sha1-9dVFDVPPRgX0MGy9Xl5x+0Mv69g=",
+  "_location": "/cordova-plugin-admob-facebook",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-admob-facebook",
+    "name": "cordova-plugin-admob-facebook",
+    "escapedName": "cordova-plugin-admob-facebook",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-admob-facebook/-/cordova-plugin-admob-facebook-4.23.0.tgz",
+  "_shasum": "f5d5450d53cf4605f4306cbd5e5e71fb432febd8",
+  "_spec": "cordova-plugin-admob-facebook",
+  "_where": "C:\\Users\\User\\inside-the-lines",
+  "author": {
+    "name": "Liming Xie"
+  },
+  "bugs": {
+    "url": "https://github.com/floatinghotpot/cordova-admob-pro/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-admob-facebook",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova plugin for AdMob adapter to Facebook AudienceNetwork Ads",
+  "homepage": "https://github.com/floatinghotpot/cordova-admob-pro#readme",
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "ad",
+    "facebook",
+    "rjfun"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-admob-facebook",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/floatinghotpot/cordova-admob-pro.git"
+  },
+  "version": "4.23.0"
+}
