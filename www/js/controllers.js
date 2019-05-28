@@ -403,6 +403,8 @@ angular.module("inside_the_lines.controllers", [])
 
 // TODO: insidethelinesCtrl --|-- 
 .controller("insidethelinesCtrl", function($ionicConfig,$scope,$rootScope,$state,$location,$ionicScrollDelegate,$ionicListDelegate,$http,$httpParamSerializer,$stateParams,$timeout,$interval,$ionicLoading,$ionicPopup,$ionicPopover,$ionicActionSheet,$ionicSlideBoxDelegate,$ionicHistory,ionicMaterialInk,ionicMaterialMotion,$window,$ionicModal,base64,md5,$document,$sce,$ionicGesture,$translate,tmhDynamicLocale){
+	$rootScope.hide_menu_about_us = "hide" ;
+	$rootScope.hide_menu_rate_this_app = "hide" ;
 	// TODO: insidethelinesCtrl --|-- showInterstitial
 	if (typeof AdMob !== "undefined"){
 		try{
