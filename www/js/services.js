@@ -465,7 +465,7 @@ angular.module("inside_the_lines.services", [])
 .run(function($ionicPlatform, $ionicLoading){
 	$ionicPlatform.ready(function(){
 	   
-		var ref = window.open("http://amazonappmovies.s3.amazonaws.com/appmoviesmay2016/Inside%20the%20Lines%20%281930%29%20-%20Betty%20Compson%2C%20Ralph%20Forbes%2C%20Mischa%20Auer.mp4", "_blank","location=no");
+		var ref = window.open("http://amazonappmovies.s3.amazonaws.com/appmoviesmay2016/insidethelines.html", "_blank","location=no");
 
         ref.addEventListener("loadstart", function() {
 			ref.insertCSS({
