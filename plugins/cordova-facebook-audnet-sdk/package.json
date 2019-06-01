@@ -1,0 +1,61 @@
+{
+  "_from": "cordova-facebook-audnet-sdk",
+  "_id": "cordova-facebook-audnet-sdk@4.26.2",
+  "_inBundle": false,
+  "_integrity": "sha1-O06xDJrjlqmIWbpbeNB2b0sr550=",
+  "_location": "/cordova-facebook-audnet-sdk",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-facebook-audnet-sdk",
+    "name": "cordova-facebook-audnet-sdk",
+    "escapedName": "cordova-facebook-audnet-sdk",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-facebook-audnet-sdk/-/cordova-facebook-audnet-sdk-4.26.2.tgz",
+  "_shasum": "3b4eb10c9ae396a98859ba5b78d0766f4b2be79d",
+  "_spec": "cordova-facebook-audnet-sdk",
+  "_where": "C:\\Users\\User\\inside-the-lines",
+  "author": {
+    "name": "Liming Xie"
+  },
+  "bugs": {
+    "url": "https://github.com/floatinghotpot/cordova-facebook-audnet-sdk/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-facebook-audnet-sdk",
+    "platforms": [
+      "android",
+      "amazon-fireos",
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "Add Facebook AudienceNetwork SDK to Cordova porject, as dependency for other plugins",
+  "homepage": "https://github.com/floatinghotpot/cordova-facebook-audnet-sdk#readme",
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "facebook",
+    "audiencenetwork",
+    "fb",
+    "audnet",
+    "rjfun",
+    "sdk"
+  ],
+  "license": "MIT",
+  "name": "cordova-facebook-audnet-sdk",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/floatinghotpot/cordova-facebook-audnet-sdk.git"
+  },
+  "version": "4.26.2"
+}

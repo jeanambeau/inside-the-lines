@@ -1,0 +1,56 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-disable-http-cache": {
+      "PACKAGE_NAME": "com.imabuilder.bighouse.insidethelines"
+    },
+    "cordova-plugin-admob-facebook": {
+      "PACKAGE_NAME": "com.imabuilder.bighouse.insidethelines"
+    },
+    "cordova-plugin-admobpro": {
+      "PLAY_SERVICES_VERSION": "16.0.0",
+      "PACKAGE_NAME": "com.imabuilder.bighouse.insidethelines"
+    },
+    "cordova-plugin-console": {
+      "PACKAGE_NAME": "com.imabuilder.bighouse.insidethelines"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.imabuilder.bighouse.insidethelines"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "com.imabuilder.bighouse.insidethelines"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.imabuilder.bighouse.insidethelines"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.imabuilder.bighouse.insidethelines"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.imabuilder.bighouse.insidethelines"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.imabuilder.bighouse.insidethelines"
+    },
+    "ionic-plugin-keyboard": {
+      "PACKAGE_NAME": "com.imabuilder.bighouse.insidethelines"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-facebook-audnet-sdk": {
+      "PACKAGE_NAME": "com.imabuilder.bighouse.insidethelines"
+    },
+    "cordova-plugin-extension": {
+      "PACKAGE_NAME": "com.imabuilder.bighouse.insidethelines"
+    },
+    "cordova-plugin-facebookads": {
+      "PACKAGE_NAME": "com.imabuilder.bighouse.insidethelines"
+    }
+  }
+}

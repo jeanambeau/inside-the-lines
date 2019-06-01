@@ -1,0 +1,60 @@
+{
+  "_from": "cordova-plugin-facebookads",
+  "_id": "cordova-plugin-facebookads@4.23.2",
+  "_inBundle": false,
+  "_integrity": "sha1-6nFPhE5pGnyzIvNKYhc+FSyJXeg=",
+  "_location": "/cordova-plugin-facebookads",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-facebookads",
+    "name": "cordova-plugin-facebookads",
+    "escapedName": "cordova-plugin-facebookads",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-facebookads/-/cordova-plugin-facebookads-4.23.2.tgz",
+  "_shasum": "ea714f844e691a7cb322f34a62173e152c895de8",
+  "_spec": "cordova-plugin-facebookads",
+  "_where": "C:\\Users\\User\\inside-the-lines",
+  "author": {
+    "name": "Raymond Xie",
+    "email": "rjfun.mobile@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/floatinghotpot/cordova-plugin-facebookads/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-facebookads",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova Plugin for Facebook AudienceNetwork Ads",
+  "homepage": "https://github.com/floatinghotpot/cordova-plugin-facebookads#readme",
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "ad",
+    "admob",
+    "facebook",
+    "audiencenetwork",
+    "rjfun"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-facebookads",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/floatinghotpot/cordova-plugin-facebookads.git"
+  },
+  "version": "4.23.2"
+}

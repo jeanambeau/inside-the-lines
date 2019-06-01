@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-facebook-audnet-sdk"
+        version="4.26.2">
+      
+  <name>Facebook AudienceNetwork SDK for Cordova</name>
+  <description>Add Facebook SDK to Cordova porject, as dependency for other plugins</description>
+  <author>Facebook</author>
+  <keywords>rjfun,cordova,facebook,sdk</keywords>
+  <repo>https://github.com/floatinghotpot/cordova-facebook-audnet-sdk.git</repo>
+  <issue>https://github.com/floatinghotpot/cordova-facebook-audnet-sdk/issues</issue>
+
+  <engines>
+    <engine name="cordova" version=">=6.4.0"/>
+    <engine name="cordova-android" version=">=6.0.0"/>
+    <engine name="cordova-ios" version=">=4.3.0"/>
+  </engines>
+
+  <platform name="android">
+    <framework src="fb-adsdk.gradle" custom="true" type="gradleReference" />
+    <framework src="com.facebook.android:audience-network-sdk:4.+"/>
+    <framework src="com.google.android.gms:play-services-ads:+"/>
+  </platform>
+     
+  <platform name="amazon-fireos">
+    <framework src="fb-adsdk.gradle" custom="true" type="gradleReference" />
+    <framework src="com.facebook.android:audience-network-sdk:4.+"/>
+    <framework src="com.google.android.gms:play-services-ads:+"/>
+  </platform>
+
+  <platform name="ios">
+    <framework src="AdSupport.framework"/>
+    <framework src="StoreKit.framework"/>
+    <framework src="CoreMotion.framework"/>
+    <framework src="CoreImage.framework"/>
+    <framework src="QuartzCore.framework"/>
+    <framework src="OpenGLES.framework"/>
+    <framework src="Security.framework"/>
+    <framework src="libc++.tbd"/>
+    <framework src="libxml2.tbd"/>
+
+    <!-- FBAudienceNetwork in cocapods is not up to date, so we still download the SDK -->
+    <framework src="FBAudienceNetwork.framework" custom="true" />
+
+    <header-file src="src/ios/KVOController.h" />
+    <header-file src="src/ios/FBKVOController.h" />
+    <source-file src="src/ios/FBKVOController.m" />
+    <header-file src="src/ios/NSObject+FBKVOController.h" />
+    <source-file src="src/ios/NSObject+FBKVOController.m" />
+
+    <!-- required cordova 6.4.0 or higher -->
+    <!-- framework src="FBAudienceNetwork" type="podspec" spec="~> 4.26.0"/ -->
+  </platform>
+
+</plugin>
