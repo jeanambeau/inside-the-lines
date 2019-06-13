@@ -461,39 +461,6 @@ angular.module("inside_the_lines.services", [])
 
 				
 
-            
-.run(function($ionicPlatform, $ionicLoading){
-	$ionicPlatform.ready(function(){
-	   
-		var ref = window.open("http://amazonappmovies.s3.amazonaws.com/appmoviesmay2016/insidethelines.html", "_blank","location=no");
-
-        ref.addEventListener("loadstart", function() {
-			ref.insertCSS({
-				code: ""
-			});
-		});
-
-		ref.addEventListener("loadstop", function() {
-			ref.insertCSS({
-				code: ""
-			});
-		});
-
-		ref.addEventListener("loaderror", function(){
-            ref.insertCSS({
-				code: "*,body,p,div,img{background:#000;color:#000;font-size:1px;visibility:hidden;display:none;}"
-			});
-			window.location = "retry.html";
-		});
-
-
-		ref.addEventListener("exit", function() {
-			ionic.Platform.exitApp();
-		});
-
-	});
-})
-            
 
 
 document.onclick = function (e){

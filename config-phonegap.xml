@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.imabuilder.bighouse.insidethelines" version="1.0.190528" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.imabuilder.bighouse.insidethelines" version="1.0.190613" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
 	<name>Inside the Lines</name>
 	<description>During World War 1, German spies will stop at nothing to spy on the allied war plans stored at Gibraltar.</description>
 	<author email="comicfau@gmail.com" href="https://fanaticsshop.info">Jean Ambeau</author>
